@@ -3,4 +3,4 @@ env:
   USERNAME: ${{ secrets.USERNAME }}
   PASSWORD: ${{ secrets.PASSWORD }}
 run:
-  test
+  nbdev_test_nbs
