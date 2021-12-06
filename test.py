@@ -14,7 +14,7 @@ def save_file(infile):
 
 # USERNAME = os.environ["USERNAME"]
 # PASWWORD = os.environ["PASSWORD"]
-print(os.getenv("USERNAME"))
+print(os.getenv("TEST_SECRET"))
 
 # pull secrets from a non-tracked secrets file
 # con = Minio(
