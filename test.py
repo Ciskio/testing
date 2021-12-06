@@ -11,8 +11,8 @@ def save_file(infile):
   return infile.name
 
 
-# USERNAME = os.environ["USERNAME"]
-# PASWWORD = os.environ["PASSWORD"]
+USERNAME = os.environ["USERNAME"]
+PASWWORD = os.environ["PASSWORD"]
 
 
 # pull secrets from a non-tracked secrets file
