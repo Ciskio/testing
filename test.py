@@ -10,27 +10,23 @@ def save_file(infile):
     f.write(infile.getbuffer())
   return infile.name
 
-st.write("DB username:", st.secrets["db_username"])
-st.write("DB password:", st.secrets["db_password"])
-
-# USERNAME = os.environ["USERNAME"]
-# PASWWORD = os.environ["PASSWORD"]
-# print(os.getenv("TEST_SECRET"))
+USERNAME = st.secrets["db_username"])
+PASSWORD = st.secrets["db_password"])
 
 # pull secrets from a non-tracked secrets file
-# con = Minio(
-#     "http://172.31.2.211:38687/",
-#     access_key=os.getenv("USERNAME"),
-#     secret_key=os.getenv("PASSWORD"),
-#     secure=True,
-# )
+con = Minio(
+    "http://172.31.2.211:38687/",
+    access_key=os.getenv("USERNAME"),
+    secret_key=os.getenv("PASSWORD"),
+    secure=True,
+)
 
-# input_file = st.file_uploader("Drag your input file here")
+input_file = st.file_uploader("Drag your input file here")
 
-# if input_file is not None:
-#   name_file = save_file(input_file)
+if input_file is not None:
+  name_file = save_file(input_file)
 
-# # Upload file as object name
-# if name_file:
+# Upload file as object name
+if name_file:
 
-#   con.fput_object(BUCKET_NAME,"testupload.txt" , name_file)
+  con.fput_object(BUCKET_NAME,"testupload.txt" , name_file)
