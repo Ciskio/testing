@@ -18,8 +18,8 @@ PASSWORD = st.secrets["db_password"]
 con = Minio(
     "http://172.31.2.211:38687/",
     access_key=USERNAME,
-    secret_key=PASSWORD,
-    secure=True,
+    secret_key=PASSWORD#,
+    #secure=True,
 )
 
 input_file = st.file_uploader("Drag your input file here")
