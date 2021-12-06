@@ -16,8 +16,8 @@ PASSWORD = st.secrets["db_password"]
 # pull secrets from a non-tracked secrets file
 con = Minio(
     "http://172.31.2.211:38687/",
-    access_key=os.getenv("USERNAME"),
-    secret_key=os.getenv("PASSWORD"),
+    access_key=os.getenv(USERNAME),
+    secret_key=os.getenv(PASSWORD),
     secure=True,
 )
 
