@@ -3,4 +3,4 @@ env:
   USERNAME: ${{ secrets.USERNAME }}
   PASSWORD: ${{ secrets.PASSWORD }}
 run:
-  Ciskio/testing/test
+  nbdeb_test_nbs
