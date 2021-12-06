@@ -1,5 +1,6 @@
 import streamlit as st
 from minio import Minio
+import os
 
 # we use this as data location
 BUCKET_NAME = "test"
