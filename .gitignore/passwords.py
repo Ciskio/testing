@@ -1,2 +1,0 @@
-TEST1="aaaa"
-TEST2="BBBB
