@@ -4,12 +4,16 @@ on: push
 
 jobs:
   test_env:
+    environment: TEST_SECRET
     runs-on: ubuntu-latest
     steps:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    
-    - name: Test inline env vars for python
-      run: USERNAME=${{ secrets.USERNAME }} python -c 'import os;print(os.environ['USERNAME'])'
+        
+    - name: Test env vars for python
+      run: python -c 'import os;print(os.environ)'
+      env:
+        USERNAME: ${{ secrets.USERNAME }} 
+        PASSWORD: ${{ secrets.PASSWORD }}
