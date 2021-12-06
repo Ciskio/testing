@@ -11,6 +11,9 @@ def save_file(infile):
   return infile.name
 
 
+USERNAME = os.environ["USERNAME"]
+PASWWORD = os.environ["PASSWORD"]
+
 # pull secrets from a non-tracked secrets file
 con = Minio(
     "http://172.31.2.211:38687/",
