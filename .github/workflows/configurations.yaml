@@ -18,4 +18,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
     
     - name: Test inline env vars for python
-      run: USERNAME=${{ secrets.ENV_SECRET }} PASSWORD=${{ secrets.REPO_SECRET }} python -c 'import os;print(os.environ)'
+      run: USERNAME=${{ secrets.USERNAME }} PASSWORD=${{ secrets.PASSWORD }} python -c 'import os;print(os.environ)'
