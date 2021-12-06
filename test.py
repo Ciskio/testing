@@ -10,9 +10,9 @@ def save_file(infile):
     f.write(infile.getbuffer())
   return infile.name
 
-print(os.environ.get("PASSWORD"))
 # print(os.environ.get("PASSWORD"))
-
+# print(os.environ.get("PASSWORD"))
+print(os.environ)
 
 # USERNAME = os.environ["USERNAME"]
 # PASWWORD = os.environ["PASSWORD"]
