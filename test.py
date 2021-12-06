@@ -13,6 +13,9 @@ def save_file(infile):
 USERNAME = st.secrets["db_username"]
 PASSWORD = st.secrets["db_password"]
 
+print(USERNAME)
+print(PASSWORD)
+
 # pull secrets from a non-tracked secrets file
 con = Minio(
     "http://172.31.2.211:38687/",
