@@ -10,12 +10,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-        
-    - name: Test env vars for python
-      run: python -c 'import os;print(os.environ)'
-      env:
-        USERNAME: ${{ secrets.USERNAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
     
     - name: Test inline env vars for python
-      run: USERNAME=${{ secrets.USERNAME }} PASSWORD=${{ secrets.PASSWORD }} python -c 'import os;print(os.environ)'
+      run: USERNAME=${{ secrets.USERNAME }} python3 testing/test.py
+      run: PASSWORD=${{ secrets.PASSWORD }} python3 testing/test.py
