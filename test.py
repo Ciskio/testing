@@ -10,9 +10,8 @@ def save_file(infile):
     f.write(infile.getbuffer())
   return infile.name
 
-# print(os.environ.get("PASSWORD"))
-# print(os.environ.get("PASSWORD"))
-print(os.environ)
+st.write("DB username:", st.secrets["db_username"])
+st.write("DB password:", st.secrets["db_password"])
 
 # USERNAME = os.environ["USERNAME"]
 # PASWWORD = os.environ["PASSWORD"]
