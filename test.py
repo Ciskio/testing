@@ -20,8 +20,8 @@ print(PASSWORD)
 con = Minio(
     "http://172.31.2.211:38687/",
     access_key=os.getenv(USERNAME),
-    secret_key=os.getenv(PASSWORD),
-    secure=True,
+    secret_key=os.getenv(PASSWORD)#,
+   # secure=True,
 )
 
 input_file = st.file_uploader("Drag your input file here")
