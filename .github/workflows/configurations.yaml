@@ -12,4 +12,4 @@ jobs:
         python-version: 3.8
     
     - name: Test inline env vars for python
-      run: USERNAME=${{ secrets.USERNAME }} python -c 'import os;print(os.environ['USERNAME'])
+      run: USERNAME=${{ secrets.USERNAME }} python -c 'import os;print(os.environ['USERNAME'])'
