@@ -1,8 +1,6 @@
 import streamlit as st
 from minio import Minio
 
-from app_secrets import USERNAME, PASSWORD
-
 def save_file(infile):
   with open(infile.name, "wb") as f:
     f.write(infile.getbuffer())
