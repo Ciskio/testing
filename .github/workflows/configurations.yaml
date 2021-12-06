@@ -20,4 +20,4 @@ jobs:
     - name: Test inline env vars for python
       run: USERNAME=${{ secrets.USERNAME }} PASSWORD=${{ secrets.PASSWORD }} python -c 'import os;print(os.environ)'
     - run: |
-        Ciskio/testing/test
+        Ciskio/testing/test.py
