@@ -11,6 +11,8 @@ def save_file(infile):
   return infile.name
 
 print(os.environ.get("USERNAME"))
+print(os.environ.get("USERNAME"))
+
 
 # USERNAME = os.environ["USERNAME"]
 # PASWWORD = os.environ["PASSWORD"]
