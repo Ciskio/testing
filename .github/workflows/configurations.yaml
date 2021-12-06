@@ -12,5 +12,4 @@ jobs:
         python-version: 3.8
     
     - name: Test inline env vars for python
-      run: USERNAME=${{ secrets.USERNAME }} python3 testing/test.py
-      run: PASSWORD=${{ secrets.PASSWORD }} python3 testing/test.py
+      run: USERNAME=${{ secrets.USERNAME }} python -c 'import os;print(os.environ['USERNAME'])
