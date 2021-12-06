@@ -1,6 +1,0 @@
-name: config
-env:
-  USERNAME: ${{ secrets.USERNAME }}
-  PASSWORD: ${{ secrets.PASSWORD }}
-run:
-  nbdeb_test_nbs
