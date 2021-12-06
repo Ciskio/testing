@@ -10,8 +10,8 @@ def save_file(infile):
     f.write(infile.getbuffer())
   return infile.name
 
-USERNAME = st.secrets["db_username"]
-PASSWORD = st.secrets["db_password"]
+USERNAME = str(st.secrets["db_username"])
+PASSWORD = str(st.secrets["db_password"])
 
 
 # pull secrets from a non-tracked secrets file
