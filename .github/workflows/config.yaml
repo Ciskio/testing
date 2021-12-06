@@ -1,0 +1,6 @@
+name: test_actions
+env:
+  USERNAME: ${{ secrets.USERNAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
+run:
+  test
